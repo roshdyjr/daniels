@@ -783,3 +783,10 @@ footer p {
 .show-navbar .navbar-toggle {
   color: var(--main-color);
 }
+
+
+@media screen and (max-width: 580px) {
+  body {
+    overflow-x: hidden;
+  }
+}
