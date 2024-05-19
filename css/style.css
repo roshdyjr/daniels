@@ -790,9 +790,3 @@ footer p {
     overflow-x: hidden;
   }
 }
-
-@media (max-width: 580px) {
-  .show-navbar.navbar-custom {
-    padding-top: 70px;
-  }
-}
