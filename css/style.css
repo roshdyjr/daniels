@@ -1,0 +1,785 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/****************************************************** Global Styles ******************************************************/
+
+:root {
+  --main-color: #1c1c1c;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.main-background {
+  background-color: var(--main-color);
+}
+
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+.main-text {
+  color: var(--main-color);
+}
+
+p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #748182;
+}
+
+/****************************************************** Navbar Start ******************************************************/
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-custom {
+  padding: 20px 0 30px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar-nav.navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-nav a {
+  color: white;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+}
+.navbar-nav a:hover {
+  color: white;
+}
+
+.navbar-nav .nav-item {
+  margin: 15px 15px;
+}
+
+.navbar .nav-link {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+}
+.nav-link.active::before {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggle {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    background-color: #ffffff;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    z-index: 99999;
+  }
+
+  .navbar-nav.navbar-nav .nav-link.active {
+    color: var(--main-color);
+  }
+
+  .navbar-nav a {
+    color: var(--main-color);
+  }
+
+  .navbar-nav a:hover {
+    color: var(--main-color);
+  }
+}
+/****************************************************** Navbar End ******************************************************/
+
+/****************************************************** Home Start ******************************************************/
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))),
+    url(../imgs/bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 0px 0px;
+  background-attachment: fixed;
+}
+
+.home-caption {
+  margin-top: 50px;
+}
+
+.home-caption h5 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.home-caption h1 {
+  font-weight: 200;
+  font-size: 60px;
+}
+
+.home-caption .home-anime {
+  font-weight: 400;
+}
+
+.home-icon {
+  margin-top: 30px;
+}
+
+.home-icon span {
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-caption h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-caption h1 {
+    font-size: 30px;
+  }
+}
+
+/****************************************************** Home End ******************************************************/
+
+/****************************************************** About Start ******************************************************/
+.about-img {
+  position: relative;
+  padding: 0 0 0 30px;
+  margin-bottom: 30px;
+}
+
+.about-img::after {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+  width: 80%;
+  height: 80%;
+  left: 0;
+  bottom: -30px;
+}
+
+.about-content h3 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.about-content .subtitle {
+  display: inline-block;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+
+.progress-margin {
+  margin-bottom: 30px;
+}
+
+.about-content .progress {
+  border-radius: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.about-content .progress-bar {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.custom-btn {
+  padding: 10px 30px;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-light {
+  background-color: white;
+}
+
+.btn-dark:hover {
+  background: transparent !important;
+  color: #343434 !important;
+}
+
+.custom-btn:hover {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+@media screen and (max-width: 991px) {
+  .about-content h3 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .about-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .btn-dark {
+    margin-bottom: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .btn-light {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+/****************************************************** About End ******************************************************/
+
+/****************************************************** Services Start ******************************************************/
+
+.section-header h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.section-header h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+.services-item {
+  padding: 50px 30px;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.services-icon {
+  font-size: 30px;
+  margin-top: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services-item .title {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.services-item .sub-title {
+  word-spacing: 2px;
+  font-size: 14px;
+}
+
+.services-item:hover .services-icon {
+  color: #eee;
+  background-color: var(--main-color);
+}
+
+/****************************************************** Services End ******************************************************/
+
+/****************************************************** Portfolio Start ******************************************************/
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  z-index: 2;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-item h6 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portfolio-item i {
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;
+  text-align: center;
+}
+
+.portfolio-item i:hover {
+  background: transparent;
+  color: #000;
+}
+
+.nav-pills .nav-link {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  padding: 0;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--main-color);
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+
+.nav-pills .nav-link.active::before {
+  content: "";
+  width: 95%;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.nav-pills li {
+  --bs-nav-link-padding-x: 0;
+  margin: 0 15px;
+}
+
+/****************************************************** Portfolio End ******************************************************/
+
+/****************************************************** Testimonials Start ******************************************************/
+
+.clients {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.clients .clients-img {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+
+.clients p {
+  word-spacing: 2px;
+}
+
+.clients h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 5px;
+}
+
+.clients span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators {
+  bottom: -100px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #869791;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+/****************************************************** Testimonials End ******************************************************/
+
+/****************************************************** Counters Start ******************************************************/
+
+.counter-icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.counter-item h3 {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.counter-item p {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/****************************************************** Counters End ******************************************************/
+
+/****************************************************** Team Start ******************************************************/
+
+.team-card {
+  background-color: rgba(52, 52, 52, 0.8);
+  border-radius: 6px;
+}
+
+.team-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.team-img img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.team-text {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.team-overlay {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+          transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.team-overlay ul {
+  text-align: center;
+  position: relative;
+  top: 60%;
+}
+
+.team-overlay ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.team-overlay ul li a {
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.team-card:hover .team-overlay {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+          transform: rotateY(0deg) scale(1, 1);
+}
+
+.team-img:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.team-overlay ul li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/****************************************************** Team End ******************************************************/
+
+/****************************************************** Contact Start ******************************************************/
+
+.contact-icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact-info h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact-card:hover .contact-icon {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.contact-form input[type="text"] {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.contact-form input[type="email"] {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.contact-form textarea {
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.contact-btn {
+  padding: 10px 40px;
+  background: var(--main-color);
+  color: #eee;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact-btn:hover {
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+.contact form input:focus-visible {
+  outline: none;
+}
+
+.contact form textarea:focus-visible {
+  outline: none;
+}
+
+@media screen and (max-width: 991px) {
+  .contact-info {
+    margin: 20px 0 !important;
+  }
+
+  .contact-form input[type="text"] {
+    margin-bottom: 20px;
+  }
+}
+/****************************************************** Contact End ******************************************************/
+
+/****************************************************** Footer Start ******************************************************/
+footer {
+  padding: 30px;
+}
+
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+}
+
+/****************************************************** Footer End ******************************************************/
+
+
+/******************************************************* NavBar Changes *******************************************************/
+
+.show-navbar {
+  background: #fff;
+  -webkit-box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+  min-height: 60px;
+  line-height: 60px;
+  padding: 0;
+  position: fixed;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.show-navbar .navbar-brand {
+  color: var(--main-color);
+}
+
+.show-navbar .navbar-nav a {
+  color: var(--main-color);
+}
+
+.show-navbar .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+
+.show-navbar .nav-link::before {
+  background-color: var(--main-color);
+}
+
+.show-navbar .navbar-toggle {
+  color: var(--main-color);
+}
